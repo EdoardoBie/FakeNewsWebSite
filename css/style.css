@@ -40,6 +40,14 @@
             position: relative;
             overflow: hidden;
         }
+
+        .detector {
+            overflow-y: scroll;
+        }
+
+        .detector2 {
+            overflow-y: scroll;
+        }
         
         .menu-button {
             position: fixed;
