@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News | Archimede</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <div class="loader-logo">Fake News</div>
+    </div>
+
+    <a href="#" class="logo">Fake<span> News</span></a>
+    <div class="menu-button" id="menuButton">
+        <div class="menu-icon"></div>
+    </div>
+    <div class="menu" id="menu">
+        <div class="menu-links">
+            <a href="#" data-section="0">Home</a>
+            <a href="#" data-section="1">Informazioni</a>
+            <a href="#" data-section="2">Statistiche</a>
+            <a href="#" data-section="3">Confronto</a>
+            <a href="#" data-section="4">FAQ</a>
+        </div>
+    </div>
+
+    <div class="pagination">
+        <div class="pagination-dot active" data-section="0"></div>
+        <div class="pagination-dot" data-section="1"></div>
+        <div class="pagination-dot" data-section="2"></div>
+        <div class="pagination-dot" data-section="3"></div>
+        <div class="pagination-dot" data-section="4"></div>
+        <div class="pagination-dot" data-section="5"></div>
+    </div>
+
+    <div class="progress-bar-horizontal" id="progressBar"></div>
+
+    <div class="container" id="container">
+        <section class="hero" id="hero">
+            <div class="particles">
+                <div class="particle" style="width: 100px; height: 100px; top: 10%; left: 5%; animation-delay: 0s;">
+                </div>
+                <div class="particle" style="width: 200px; height: 200px; top: 60%; left: 60%; animation-delay: 3s;">
+                </div>
+                <div class="particle" style="width: 150px; height: 150px; top: 30%; left: 70%; animation-delay: 6s;">
+                </div>
+                <div class="particle" style="width: 80px; height: 80px; top: 70%; left: 20%; animation-delay: 1s;">
+                </div>
+                <div class="particle" style="width: 120px; height: 120px; top: 40%; left: 40%; animation-delay: 4s;">
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1>Fake News - Archimede Treviglio (BG)</h1>
+                <p>Verifica le fake news con l'intelligenza artificiale.</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn btn-primary" id="startBtn">Inizia subito</a>
+                    <a href="#" class="btn btn-outline" id="learnBtn">Scopri di più</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="info" id="info">
+            <div class="section-title">
+                <h2>Come trovare una fake news</h2>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-icon">🔍</div>
+                        <h3>Controlla la fonte</h3>
+                        <p>Verifica sempre chi ha pubblicato la notizia. Fonti sconosciute, siti con nomi strani o senza
+                            informazioni di contatto sono spesso poco affidabili.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-icon">🔄</div>
+                        <h3>Analizza il linguaggio</h3>
+                        <p>Le fake news usano spesso titoli sensazionalistici, parole in maiuscolo o punti esclamativi
+                            per attirare attenzione e suscitare emozioni forti.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-icon">📊</div>
+                        <h3>Verifica i fatti</h3>
+                        <p>Cerca la stessa notizia su fonti autorevoli o siti di fact-checking. Se nessun altro ne parla
+                            o mancano dati concreti, è probabile che sia falsa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats" id="stats">
+            <h2>L'impatto delle fake news</h2>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="20">0</div>
+                    <div class="stat-text">degli italiani ha condiviso notizie false almeno una volta</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="65">0</div>
+                    <div class="stat-text">delle fake news si diffonde più velocemente delle notizie reali</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="96">0</div>
+                    <div class="stat-text">degli utenti desidera strumenti per verificare l'autenticità delle notizie
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="detector" id="detector">
+            <div class="comparison-section">
+
+                <div class="fake-news-card left-card">
+                    <div class="card-header">
+                        <div class="card-badge" style="margin-top: 20px;">FALSO</div>
+                        <h3>#1 - I vaccini provocano l’autismo</h3>
+                    </div>
+                    <div class="card-content-wrapper">
+                        <div class="news-icon">
+                            <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="1.5"
+                                fill="none">
+                                <path
+                                    d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z">
+                                </path>
+                                <path d="M10 12L8 17H16L14 12L12 14L10 12Z"></path>
+                                <circle cx="7.5" cy="7.5" r="1.5"></circle>
+                            </svg>
+                        </div>
+                        <div class="fake-news-content">
+                            <div class="news-source">Fonte: <span class="source-text">www.issalute.it</span></div>
+                            <div class="news-date">Pubblicato il: <span class="date-text">28 Febbraio 2018</span></div>
+                            <div class="news-text">
+                                <p>
+                                    Le fake news creano false credenze, come quella del "10% del cervello", nonostante
+                                    le prove contrarie, e alimentano pseudoscienze utilizzate per vendere corsi
+                                    miracolosi o prodotti inutili. In ambito politico, queste false informazioni possono
+                                    influenzare le scelte pubbliche, minando la fiducia nella scienza. Se le persone
+                                    dubitano delle neuroscienze, potrebbero dubitare anche di altre verità scientifiche,
+                                    come il cambiamento climatico.
+                                </p>
+                                <p>
+                                    Non è vero che usiamo solo il 10% del nostro cervello. Le neuroscienze dimostrano
+                                    che tutto il cervello è attivo: scansioni cerebrali mostrano che tutte le aree
+                                    svolgono funzioni specifiche, anche durante il sonno. Nessuna parte del cervello è
+                                    inutile, poiché lesioni in qualsiasi zona causano deficit e l'evoluzione non avrebbe
+                                    mantenuto un organo per il 90% inattivo. Questo mito deriva dalla malinterpretazione
+                                    di studi ottocenteschi ed è stato diffuso attraverso film e pseudoscienza.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fake-news-analysis">
+                        <h4><span class="analysis-icon">🔍</span> Analisi della falsità:</h4>
+                        <ul>
+                            <li>Studio iniziale falso: La ricerca del 1998 era fraudolenta e fu ritirata. L'autore perse
+                                la licenza medica</li>
+                            <li>Nessuna prova scientifica: Tutti gli studi successivi (OMS, ricerche internazionali)
+                                confermano che non esiste alcun legame</li>
+                            <li>Allarme degli esperti: L'OMS considera l'esitazione vaccinale una minaccia globale</li>
+                            <li>Conseguenze pericolose: Il calo di vaccinazioni ha causato epidemie di
+                                malattie prevenibili</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <br />
+            </div>
+        </section>
+
+        <section class="detector2" id="detector2">
+            <br /><br /><br /><br /><br /><br /><br />
+            <div class="comparison-section">
+
+                <div class="fake-news-card left-card">
+                    <div class="card-header">
+                        <div class="card-badge" style="margin-top: 20px;">FALSO</div>
+                        <h3>#2 - Utilizziamo solo il 10% del nostro cervello</h3>
+                    </div>
+                    <div class="card-content-wrapper">
+                        <div class="news-icon">
+                            <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="1.5"
+                                fill="none">
+                                <path
+                                    d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z">
+                                </path>
+                                <path d="M10 12L8 17H16L14 12L12 14L10 12Z"></path>
+                                <circle cx="7.5" cy="7.5" r="1.5"></circle>
+                            </svg>
+                        </div>
+                        <div class="fake-news-content">
+                            <div class="news-source">Fonte: <span class="source-text">Harvard Medical School, Society
+                                    for Neuroscience</span></div>
+                            <div class="news-text">
+                                <p>
+                                    I ricercatori dell'Università di Milano hanno scoperto un nuovo metodo
+                                    rivoluzionario per perdere peso senza dieta né esercizio fisico. Secondo lo studio,
+                                    bere acqua con limone e sale himalayano a stomaco vuoto prima di dormire accelera il
+                                    metabolismo del 500% durante la notte.
+                                </p>
+                                <p>
+                                    "È una scoperta che cambierà il mondo della nutrizione", afferma il presunto dottor
+                                    Alessandro Bianchi, che ha guidato la ricerca. "Abbiamo osservato che i partecipanti
+                                    hanno perso in media 8 kg in appena 10 giorni senza altri cambiamenti nella loro
+                                    routine quotidiana. Questo perché i minerali del sale himalayano, combinati con gli
+                                    enzimi del limone, attivano un gene dormiente responsabile della combustione dei
+                                    grassi."
+                                </p>
+                                <p>
+                                    Lo studio, che avrebbe coinvolto 5000 volontari, afferma che questa combinazione di
+                                    ingredienti "disattiva completamente l'accumulo di grassi e riattiva il DNA
+                                    ancestrale che permetteva ai nostri antenati di bruciare calorie mentre dormivano."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fake-news-analysis">
+                        <h4><span class="analysis-icon">🔍</span> Analisi della falsità:</h4>
+                        <ul>
+                            <li>Troppi aggettivi ("incredibile!", "rivoluzionario!")</li>
+                            <li>"Diventa Einstein in 7 giorni!"</li>
+                            <li>Nessuna verifica da parte della comunità scientifica.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <br />
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <h2>Domande frequenti</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-icon">❓</span>
+                        <span class="question-text">Cos’è una fake news?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>È una notizia falsa o ingannevole, creata per attirare l’attenzione, influenzare le opinioni
+                            o diffondere disinformazione.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-icon">❓</span>
+                        <span class="question-text">Perché la notizia "Usiamo solo il 10% del cervello" è falsa?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Perché le neuroscienze dimostrano che tutto il cervello è attivo (anche durante il sonno) e
+                            danni a qualsiasi zona causano problemi.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-icon">❓</span>
+                        <span class="question-text">Come faccio a capire se una notizia è falsa?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Controlla:<br /><br />
+
+                            Se ha fonti affidabili (OMS, università).<br />
+
+                            Se usa linguaggio esagerato ("miracoloso!", "rivoluzionario!").<br />
+
+                            Se promette risultati impossibili ("Diventa ricco in 3 giorni!").<br />
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-icon">❓</span>
+                        <span class="question-text">Quali sono i rischi delle fake news?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Risposta:<br /><br />
+
+                            Creano false credenze (es. "I vaccini fanno male").<br />
+
+                            Alimentano paure ingiustificate (es. complotti senza prove).<br />
+
+                            Possono danneggiare la salute (es. chi rifiuta cure basandosi su bufale).<br />
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-icon">❓</span>
+                        <span class="question-text">Cosa posso fare per evitare di credere alle fake news?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Risposta:<br /><br />
+
+                            Verifica sempre le fonti (cerca su siti ufficiali o fact-checking).<br />
+
+                            Diffida dei titoli troppo sensazionali.<br />
+
+                            Condividi solo notizie di cui sei sicuro.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-copyright">Biestro Edoardo, Finali Chiara, Dilecce Riccardo, Dourka Rayan</div>
+        <div class="footer-social">
+            <div class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+            </div>
+            <div class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                    </path>
+                </svg>
+            </div>
+            <div class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
